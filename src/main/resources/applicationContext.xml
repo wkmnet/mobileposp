@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Licensed to the Apache Software Foundation (ASF) under one or more
+  contributor license agreements.  See the NOTICE file distributed with
+  this work for additional information regarding copyright ownership.
+  The ASF licenses this file to You under the Apache License, Version 2.0
+  (the "License"); you may not use this file except in compliance with
+  the License.  You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+-->
+ <!-- 
+       xmlns:configurator="http://cocoon.apache.org/schema/configurator"
+       xmlns:avalon="http://cocoon.apache.org/schema/avalon"
+       http://cocoon.apache.org/schema/configurator http://cocoon.apache.org/schema/configurator/cocoon-configurator-2.0.0.xsd
+                           http://cocoon.apache.org/schema/avalon http://cocoon.apache.org/schema/avalon/cocoon-avalon-1.0.xsd"
+                           		  
+-->
+<!-- @version $Id: applicationContext.xml 561608 2007-08-01 00:33:12Z vgritsenko $ -->
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:util="http://www.springframework.org/schema/util"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:mvc="http://www.springframework.org/schema/mvc"
+       
+        
+       xsi:schemaLocation="http://www.springframework.org/schema/beans 		http://www.springframework.org/schema/beans/spring-beans-4.1.xsd
+                           http://www.springframework.org/schema/util 			http://www.springframework.org/schema/util/spring-util-4.1.xsd
+                           http://www.springframework.org/schema/mvc 			http://www.springframework.org/schema/mvc/spring-mvc-4.1.xsd
+                           http://www.springframework.org/schema/context 		http://www.springframework.org/schema/context/spring-context-4.1.xsd">
+
+  <!-- Activate Cocoon Spring Configurator 
+  <configurator:settings/>
+	-->
+  <!-- Configure Log4j 
+  <bean name="org.apache.cocoon.spring.configurator.log4j"
+        class="org.apache.cocoon.spring.configurator.log4j.Log4JConfigurator"
+        scope="singleton">
+    <property name="settings" ref="org.apache.cocoon.configuration.Settings"/>
+    <property name="resource" value="/WEB-INF/log4j.xml"/>
+  </bean>
+	-->
+  <!-- Activate Avalon Bridge 
+  <avalon:bridge/>
+   -->
+   
+   	<context:component-scan base-package="org.mobile.pos.mobileposp"></context:component-scan>
+   	<mvc:interceptors>
+   		<bean class="org.mobile.pos.mobileposp.interceptor.MobilePospInterceptor"></bean>
+   	</mvc:interceptors>
+   	
+   	<bean class="org.mobile.pos.mobileposp.util.CustomizedPropertyConfigurer">
+   		<property name="locations">
+   			<array>
+   				<value>classpath:jdbc.properties</value>
+   			</array>
+   		</property>
+   	</bean>
+	<bean
+ 		class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+ 		<property name="prefix">
+ 			<value>/WEB-INF/views/</value>
+ 		</property>
+ 		<property name="suffix">
+ 			<value>.jsp</value>
+ 		</property>
+ 		<property name="viewClass">
+ 			<value type="java.lang.Class">org.springframework.web.servlet.view.JstlView</value>
+ 		</property>
+ 	</bean>
+   
+	<bean id="transactionManager"  
+						class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
+		<property name="dataSource">
+ 			<ref bean="dataSource"/>
+ 		</property>
+	</bean>
+	<bean id="transactionTemplate" class="org.springframework.transaction.support.TransactionTemplate">
+		<property name="transactionManager">
+			<ref bean="transactionManager"/>
+		</property>
+	</bean>
+   
+   <bean id="jdbcTemplate" class="org.springframework.jdbc.core.JdbcTemplate">
+		<property name="dataSource">
+			<ref bean="dataSource"/>
+		</property>
+	</bean>
+	
+	<bean id="dataSource"  
+        class="org.apache.commons.dbcp.BasicDataSource"  
+        destroy-method="close">   
+        <property name="driverClassName"  
+            value="${driverClassName}" />   
+        <property name="url"  
+            value="${url}"/>   
+        <property name="username" value="${username}" />   
+        <property name="password" value="${password}" />   
+    </bean>
+  
+  	 <!--避免出现乱码 --> 
+    <bean id="stringHttpMessageConverter"  
+        class="org.springframework.http.converter.StringHttpMessageConverter">  
+        <constructor-arg value="UTF-8" index="0"></constructor-arg>
+        <property name="supportedMediaTypes">  
+            <list>  
+                <value>text/plain;charset=UTF-8</value>  
+            </list>  
+        </property>  
+    </bean>  
+    <bean id="mappingJacksonHttpMessageConverter" class="org.springframework.http.converter.json.MappingJackson2HttpMessageConverter">    
+	    <property name="supportedMediaTypes">    
+	        <list>
+	        		<value>application/json</value>
+	        		<value>text/html;charset=UTF-8</value>     
+	        </list>    
+	    </property>    
+	</bean>    
+  
+	<!-- 启动Spring MVC的注解功能，完成请求和注解POJO的映射 -->    
+	<bean class="org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter">    
+	    <property name="messageConverters">    
+	        <list>    
+	            <ref bean="mappingJacksonHttpMessageConverter" /><!-- json转换器 -->
+	            <ref bean="stringHttpMessageConverter" />   
+	        </list>    
+	    </property>    
+	</bean>
+	
+</beans>
