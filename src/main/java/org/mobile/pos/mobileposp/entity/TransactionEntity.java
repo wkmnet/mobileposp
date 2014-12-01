@@ -48,6 +48,12 @@ public class TransactionEntity {
 	
 	//校验值
 	private String checksum = null;
+	
+	//流水编号
+	private String traceCode = null;
+	
+	//批次编号
+	private String batchCode = null;
 
 	public String getEncryptTracks() {
 		return encryptTracks;
@@ -128,6 +134,21 @@ public class TransactionEntity {
 	public void setChecksum(String checksum) {
 		this.checksum = checksum;
 	}
-	
+
+	public String getTraceCode() {
+		return traceCode;
+	}
+
+	public void setTraceCode(String traceCode) {
+		this.traceCode = traceCode;
+	}
+
+	public String getBatchCode() {
+		return batchCode;
+	}
+
+	public void setBatchCode(String batchCode) {
+		this.batchCode = batchCode;
+	}
 }
 

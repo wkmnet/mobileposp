@@ -124,7 +124,17 @@
             <groupId>com.fasterxml.jackson.core</groupId>  
             <artifactId>jackson-annotations</artifactId>  
             <version>2.1.0</version>  
-        </dependency>  
+        </dependency>
+        <dependency>
+            <groupId>org.jpos</groupId>
+            <artifactId>jpos</artifactId>
+            <version>1.9.8</version>
+        </dependency>
+        <dependency>
+            <groupId>commons-httpclient</groupId>
+            <artifactId>commons-httpclient</artifactId>
+            <version>3.1</version>
+        </dependency>
   </dependencies>
   <build>
     <finalName>mobileposp</finalName>

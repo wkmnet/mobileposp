@@ -13,6 +13,8 @@ import java.util.Map;
 
 import org.mobile.pos.mobileposp.action.AbstractAction;
 import org.mobile.pos.mobileposp.entity.TransactionEntity;
+import org.mobile.pos.mobileposp.service.trans.TransactionService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -33,6 +35,9 @@ import org.springframework.web.bind.annotation.ResponseBody;
 @Scope("prototype")
 @RequestMapping("/trans")
 public class TransactionAction extends AbstractAction {
+	
+	@Autowired
+	private TransactionService transactionService = null;
 
 	/**
 	 * 
@@ -49,7 +54,7 @@ public class TransactionAction extends AbstractAction {
 	@ResponseBody
 	@RequestMapping(value="/trans.action",method=RequestMethod.POST)
 	public Object transaction (TransactionEntity transactionParams){
-		return null;
+		return transactionService.transaction(transactionParams);
 	}
 	
 	@RequestMapping(value="/test2.action",produces="text/html;charset=UTF-8")

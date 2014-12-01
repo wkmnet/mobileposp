@@ -9,6 +9,8 @@
 package org.mobile.pos.mobileposp.service.trans;
 
 import org.mobile.pos.mobileposp.entity.TransactionEntity;
+import org.mobile.pos.mobileposp.exception.PospException;
+import org.mobile.pos.mobileposp.iso.SaleChannel;
 import org.mobile.pos.mobileposp.service.AbstractService;
 import org.mobile.pos.mobileposp.util.ResponseMessageUtil;
 import org.mobile.pos.mobileposp.util.UnionpayResponseCode;
@@ -48,9 +50,16 @@ public class TransactionService extends AbstractService {
 		if( null == transactionParams){
 			return ResponseMessageUtil.failMessage(UnionpayResponseCode.ILLEGAL_ARGUMENT.getResponseCode());
 		}
-		
-		
-		return null;
+		try {
+			SaleChannel sale = new SaleChannel();
+			return sale.sale(transactionParams);
+		} catch (PospException e){
+			logger.error("PospException:" + e.getMessage(),e);
+			return ResponseMessageUtil.failMessage(e.getExceptionCode(), e.getMessage());
+		} catch (Exception e){
+			logger.error("Exception:" + e.getMessage(),e);
+			return ResponseMessageUtil.failMessage(UnionpayResponseCode.UNKNOW_EXCEPTION);
+		}
 	}
 	
 	
