@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC   
+    "-//mybatis.org//DTD Mapper 3.0//EN"  
+    "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="org.mobile.pos.mobileposp.dao.TerminalMapper">
+    <select id="findTerminalById" parameterType="String" resultType="TerminalEntity">
+        select mt.id id,mt.batch_no batchNo,mt.enabled enabled,mt.machine_sn machineCode,
+        mt.merchant_id merchantId,mt.merchant_no merchantNo,mt.terminal_no terminalNo,
+        mt.trace_no traceNo,mt.ic_status icStatus  from merchant_terminal mt where mt.id=#{id}
+    </select>
+</mapper>

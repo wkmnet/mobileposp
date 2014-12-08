@@ -10,7 +10,7 @@ package org.mobile.pos.mobileposp.action;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.context.annotation.Scope;
 
 /**
  * ClassName:AbstractAction <br/>
@@ -22,16 +22,10 @@ import org.springframework.web.bind.annotation.ResponseBody;
  * @since    JDK 1.6
  * @see 	 
  */
-
 public abstract class AbstractAction {
 	
 	//标准的日志输出
 	protected Logger logger = LoggerFactory.getLogger(this.getClass());
-	
-	
-	public @ResponseBody Object responseMessage(Object message){
-		return message;
-	}
 
 }
 

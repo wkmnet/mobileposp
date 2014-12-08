@@ -17,10 +17,12 @@ import org.jpos.core.InvalidCardException;
 import org.jpos.iso.ISOException;
 import org.jpos.iso.ISOMsg;
 import org.jpos.iso.ISOUtil;
-import org.mobile.pos.mobileposp.entity.TransactionEntity;
+import org.mobile.pos.mobileposp.entity.BaseEntity;
+import org.mobile.pos.mobileposp.entity.TransactionBaseEntity;
 import org.mobile.pos.mobileposp.exception.PospException;
 import org.mobile.pos.mobileposp.util.ResponseMessageUtil;
 import org.mobile.pos.mobileposp.util.UnionpayResponseCode;
+import org.springframework.stereotype.Component;
 
 /**
  * ClassName:SaleChannel <br/>
@@ -32,6 +34,7 @@ import org.mobile.pos.mobileposp.util.UnionpayResponseCode;
  * @since    JDK 1.6
  * @see 	 
  */
+@Component
 public class SaleChannel extends AbstractChannel{
 
 	public SaleChannel() throws PospException {
@@ -39,7 +42,15 @@ public class SaleChannel extends AbstractChannel{
 	}
 
 	
-	public Map<String,Object> sale(TransactionEntity transactionEntity) throws PospException{
+	public Object processe(BaseEntity baseEntity) throws PospException{
+		// TODO Auto-generated method stub
+		if(baseEntity instanceof TransactionBaseEntity){
+			return sale((TransactionBaseEntity) baseEntity);
+		}
+		return ResponseMessageUtil.failMessage(UnionpayResponseCode.ILLEGAL_REQUSET);
+	}
+
+	public Map<String,Object> sale(TransactionBaseEntity transactionEntity) throws PospException{
 		try {
 			CardHolder cradHolder = new CardHolder(transactionEntity.getEncryptTracks());
 			logger.info("二磁道信息：" + transactionEntity.getEncryptTracks());
@@ -55,9 +66,9 @@ public class SaleChannel extends AbstractChannel{
 				message.set(14, cradHolder.getEXP());
 			}
 			if(StringUtils.isBlank(transactionEntity.getDataFieldIc())){
-				message.set(22,StringUtils.isBlank(transactionEntity.getEncryptPinBlock())?"051":"052");
+				message.set(22,StringUtils.isBlank(transactionEntity.getEncryptPinBlock())?"022":"021");
 			} else {
-				message.set(22,StringUtils.isBlank(transactionEntity.getEncryptPinBlock())?"021":"022");
+				message.set(22,StringUtils.isBlank(transactionEntity.getEncryptPinBlock())?"052":"051");
 			}
 			if(!StringUtils.isBlank(transactionEntity.getCardSerialNum())){
 				message.set(23,transactionEntity.getCardSerialNum());
@@ -66,10 +77,10 @@ public class SaleChannel extends AbstractChannel{
 			if(!StringUtils.isBlank(transactionEntity.getEncryptPinBlock())){
 				message.set(26,"06");
 			}
-			message.set(28,"E00000001");
+			message.set(28,transactionEntity.getChecksum());
 			message.set(35,cradHolder.getTrack2());
-			message.set(41,"30597848");
-			message.set(42,"500000000524699");
+			message.set(41,transactionEntity.getTerminalNo());
+			message.set(42,transactionEntity.getMerchantNo());
 			message.set(49,"156");
 			if(!StringUtils.isBlank(transactionEntity.getEncryptPinBlock())){
 				message.set(52,ISOUtil.hex2byte(transactionEntity.getEncryptPinBlock()));

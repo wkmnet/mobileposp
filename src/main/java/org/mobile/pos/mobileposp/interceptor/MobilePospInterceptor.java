@@ -53,7 +53,8 @@ public class MobilePospInterceptor extends HandlerInterceptorAdapter {
 		//打印请求参数信息
 		StringBuilder params = new StringBuilder();
 		params.append(System.getProperty("line.separator"));
-		params.append("请求入参数：[");
+		params.append("request：[");
+		params.append(System.getProperty("line.separator"));
 		Enumeration<String> paramNames = request.getParameterNames();
 		while(paramNames.hasMoreElements()){
 			String key = paramNames.nextElement();
@@ -83,17 +84,12 @@ public class MobilePospInterceptor extends HandlerInterceptorAdapter {
 	public void postHandle(HttpServletRequest request,
 			HttpServletResponse response, Object handler,
 			ModelAndView modelAndView) throws Exception {
-		if(modelAndView == null){
-			logger.info("没有返回实体信息...");
-			return;
+		if(modelAndView != null){
+			Map<String,Object> map = modelAndView.getModel();
+			logger.info("响应data信息：" + map);
+			logger.info("响应jsp信息：" + modelAndView.getViewName());
+			logger.info("响应url信息：" + modelAndView.getView());
 		}
-		Map<String,Object> map = modelAndView.getModel();
-		logger.info("响应data信息：" + map);
-		logger.info("响应jsp信息：" + modelAndView.getViewName());
-		logger.info("响应url信息：" + modelAndView.getView());
 	}
-	
-	
-
 }
 

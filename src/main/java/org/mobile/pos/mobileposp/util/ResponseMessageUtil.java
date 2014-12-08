@@ -13,6 +13,8 @@ import java.util.Map;
 
 import org.apache.commons.collections.MapUtils;
 import org.apache.commons.lang3.StringUtils;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 
 /**
@@ -26,6 +28,8 @@ import org.apache.commons.lang3.StringUtils;
  * @see 	 
  */
 public class ResponseMessageUtil {
+	
+	private static Logger logger = LoggerFactory.getLogger(ResponseMessageUtil.class);
 
 	private ResponseMessageUtil(){}
 	
@@ -87,6 +91,8 @@ public class ResponseMessageUtil {
 		result.put("isSuccess", String.valueOf(isSuccess));
 		result.put("respCode", responseCode);
 		result.put("respMsg", getResponseMessage(responseCode));
+		logger.info(System.getProperty("line.separator"));
+		logger.info("response:" + result);
 		return result;
 	}
 	

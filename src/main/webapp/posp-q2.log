@@ -1,0 +1,459 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<logger class="org.jpos.util.DailyLogListener">
+<?xml version="1.0" encoding="UTF-8"?>
+<logger class="org.jpos.util.DailyLogListener">
+<?xml version="1.0" encoding="UTF-8"?>
+<logger class="org.jpos.util.DailyLogListener">
+<log realm="org.jpos.ext.security.SoftSecurityModule" at="Wed Dec 03 18:14:10 CST 2014.758" lifespan="1557ms">
+  <jce-provider>
+    No JCE Provider specified. Attempting to load default provider (SunJCE).
+    <name>SunJCE</name>
+    
+    jPOS 1.9.8 master/baae23b (2014-08-10 15:13:59 UYT) 
+
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+jPOS Community Edition, licensed under GNU AGPL v3.0.
+This software is probably not suitable for commercial use.
+Please see http://jpos.org/license for details.
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.9 (Darwin)
+
+iQEcBAEBAgAGBQJMolHDAAoJEOQyeO71nYtFv74H/3OgehDGEy1VXp2U3/GcAobg
+HH2eZjPUz53r38ARPiU3pzm9LwDa3WZgJJaa/b9VrJwKvbPwe9+0kY3gScDE1skT
+ladHt+KHHmGQArEutkzHlpZa73RbroFEIa1qmN6MaDEHGoxZqDh0Sv2cpvOaVYGO
+St8ZaddLBPC17bSjAPWo9sWbvL7FgPFOHhnPmbeux8SLtnfWxXWsgo5hLBanKmO1
+1z+I/w/6DL6ZYZU6bAJUk+eyVVImJqw0x3IEElI07Nh9MC6BA4iJ77ejobj8HI2r
+q9ulRPEqH9NR79619lNKVUkE206dVlXo7xHmJS1QZy5v/GT66xBxyDVfTduPFXk=
+=oP+v
+-----END PGP SIGNATURE-----
+
+  </jce-provider>
+</log>
+<log realm="org.jpos.ext.security.SoftSecurityModule" at="Wed Dec 03 18:14:10 CST 2014.776">
+  <local-master-keys>
+    Loaded successfully from file: "/mnt/workspaces/work_eclipse/gitspace20141124/mobileposp/src/main/webapp/WEB-INF/config/lmk"
+  </local-master-keys>
+</log>
+<?xml version="1.0" encoding="UTF-8"?>
+<logger class="org.jpos.util.DailyLogListener">
+<log realm="org.jpos.ext.security.SoftSecurityModule" at="Thu Dec 04 14:52:56 CST 2014.702" lifespan="1510ms">
+  <jce-provider>
+    No JCE Provider specified. Attempting to load default provider (SunJCE).
+    <name>SunJCE</name>
+    
+    jPOS 1.9.8 master/baae23b (2014-08-10 15:13:59 UYT) 
+
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+jPOS Community Edition, licensed under GNU AGPL v3.0.
+This software is probably not suitable for commercial use.
+Please see http://jpos.org/license for details.
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.9 (Darwin)
+
+iQEcBAEBAgAGBQJMolHDAAoJEOQyeO71nYtFv74H/3OgehDGEy1VXp2U3/GcAobg
+HH2eZjPUz53r38ARPiU3pzm9LwDa3WZgJJaa/b9VrJwKvbPwe9+0kY3gScDE1skT
+ladHt+KHHmGQArEutkzHlpZa73RbroFEIa1qmN6MaDEHGoxZqDh0Sv2cpvOaVYGO
+St8ZaddLBPC17bSjAPWo9sWbvL7FgPFOHhnPmbeux8SLtnfWxXWsgo5hLBanKmO1
+1z+I/w/6DL6ZYZU6bAJUk+eyVVImJqw0x3IEElI07Nh9MC6BA4iJ77ejobj8HI2r
+q9ulRPEqH9NR79619lNKVUkE206dVlXo7xHmJS1QZy5v/GT66xBxyDVfTduPFXk=
+=oP+v
+-----END PGP SIGNATURE-----
+
+  </jce-provider>
+</log>
+<log realm="org.jpos.ext.security.SoftSecurityModule" at="Thu Dec 04 14:52:56 CST 2014.766">
+  <local-master-keys>
+    Loaded successfully from file: "/mnt/workspaces/work_eclipse/gitspace20141124/mobileposp/src/main/webapp/WEB-INF/config/lmk"
+  </local-master-keys>
+</log>
+<?xml version="1.0" encoding="UTF-8"?>
+<logger class="org.jpos.util.DailyLogListener">
+<log realm="org.jpos.ext.security.SoftSecurityModule" at="Thu Dec 04 15:13:46 CST 2014.59" lifespan="1526ms">
+  <jce-provider>
+    No JCE Provider specified. Attempting to load default provider (SunJCE).
+    <name>SunJCE</name>
+    
+    jPOS 1.9.8 master/baae23b (2014-08-10 15:13:59 UYT) 
+
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+jPOS Community Edition, licensed under GNU AGPL v3.0.
+This software is probably not suitable for commercial use.
+Please see http://jpos.org/license for details.
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.9 (Darwin)
+
+iQEcBAEBAgAGBQJMolHDAAoJEOQyeO71nYtFv74H/3OgehDGEy1VXp2U3/GcAobg
+HH2eZjPUz53r38ARPiU3pzm9LwDa3WZgJJaa/b9VrJwKvbPwe9+0kY3gScDE1skT
+ladHt+KHHmGQArEutkzHlpZa73RbroFEIa1qmN6MaDEHGoxZqDh0Sv2cpvOaVYGO
+St8ZaddLBPC17bSjAPWo9sWbvL7FgPFOHhnPmbeux8SLtnfWxXWsgo5hLBanKmO1
+1z+I/w/6DL6ZYZU6bAJUk+eyVVImJqw0x3IEElI07Nh9MC6BA4iJ77ejobj8HI2r
+q9ulRPEqH9NR79619lNKVUkE206dVlXo7xHmJS1QZy5v/GT66xBxyDVfTduPFXk=
+=oP+v
+-----END PGP SIGNATURE-----
+
+  </jce-provider>
+</log>
+<log realm="org.jpos.ext.security.SoftSecurityModule" at="Thu Dec 04 15:13:46 CST 2014.78">
+  <local-master-keys>
+    Loaded successfully from file: "/mnt/workspaces/work_eclipse/gitspace20141124/mobileposp/src/main/webapp/WEB-INF/config/lmk"
+  </local-master-keys>
+</log>
+<?xml version="1.0" encoding="UTF-8"?>
+<logger class="org.jpos.util.DailyLogListener">
+<log realm="org.jpos.ext.security.SoftSecurityModule" at="Thu Dec 04 16:54:05 CST 2014.865" lifespan="1645ms">
+  <jce-provider>
+    No JCE Provider specified. Attempting to load default provider (SunJCE).
+    <name>SunJCE</name>
+    
+    jPOS 1.9.8 master/baae23b (2014-08-10 15:13:59 UYT) 
+
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+jPOS Community Edition, licensed under GNU AGPL v3.0.
+This software is probably not suitable for commercial use.
+Please see http://jpos.org/license for details.
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.9 (Darwin)
+
+iQEcBAEBAgAGBQJMolHDAAoJEOQyeO71nYtFv74H/3OgehDGEy1VXp2U3/GcAobg
+HH2eZjPUz53r38ARPiU3pzm9LwDa3WZgJJaa/b9VrJwKvbPwe9+0kY3gScDE1skT
+ladHt+KHHmGQArEutkzHlpZa73RbroFEIa1qmN6MaDEHGoxZqDh0Sv2cpvOaVYGO
+St8ZaddLBPC17bSjAPWo9sWbvL7FgPFOHhnPmbeux8SLtnfWxXWsgo5hLBanKmO1
+1z+I/w/6DL6ZYZU6bAJUk+eyVVImJqw0x3IEElI07Nh9MC6BA4iJ77ejobj8HI2r
+q9ulRPEqH9NR79619lNKVUkE206dVlXo7xHmJS1QZy5v/GT66xBxyDVfTduPFXk=
+=oP+v
+-----END PGP SIGNATURE-----
+
+  </jce-provider>
+</log>
+<log realm="org.jpos.ext.security.SoftSecurityModule" at="Thu Dec 04 16:54:05 CST 2014.877">
+  <local-master-keys>
+    Loaded successfully from file: "/mnt/workspaces/work_eclipse/gitspace20141124/mobileposp/src/main/webapp/WEB-INF/config/lmk"
+  </local-master-keys>
+</log>
+<?xml version="1.0" encoding="UTF-8"?>
+<logger class="org.jpos.util.DailyLogListener">
+<log realm="org.jpos.ext.security.SoftSecurityModule" at="Thu Dec 04 17:02:09 CST 2014.865" lifespan="1446ms">
+  <jce-provider>
+    No JCE Provider specified. Attempting to load default provider (SunJCE).
+    <name>SunJCE</name>
+    
+    jPOS 1.9.8 master/baae23b (2014-08-10 15:13:59 UYT) 
+
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+jPOS Community Edition, licensed under GNU AGPL v3.0.
+This software is probably not suitable for commercial use.
+Please see http://jpos.org/license for details.
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.9 (Darwin)
+
+iQEcBAEBAgAGBQJMolHDAAoJEOQyeO71nYtFv74H/3OgehDGEy1VXp2U3/GcAobg
+HH2eZjPUz53r38ARPiU3pzm9LwDa3WZgJJaa/b9VrJwKvbPwe9+0kY3gScDE1skT
+ladHt+KHHmGQArEutkzHlpZa73RbroFEIa1qmN6MaDEHGoxZqDh0Sv2cpvOaVYGO
+St8ZaddLBPC17bSjAPWo9sWbvL7FgPFOHhnPmbeux8SLtnfWxXWsgo5hLBanKmO1
+1z+I/w/6DL6ZYZU6bAJUk+eyVVImJqw0x3IEElI07Nh9MC6BA4iJ77ejobj8HI2r
+q9ulRPEqH9NR79619lNKVUkE206dVlXo7xHmJS1QZy5v/GT66xBxyDVfTduPFXk=
+=oP+v
+-----END PGP SIGNATURE-----
+
+  </jce-provider>
+</log>
+<log realm="org.jpos.ext.security.SoftSecurityModule" at="Thu Dec 04 17:02:09 CST 2014.881">
+  <local-master-keys>
+    Loaded successfully from file: "/mnt/workspaces/work_eclipse/gitspace20141124/mobileposp/src/main/webapp/WEB-INF/config/lmk"
+  </local-master-keys>
+</log>
+<?xml version="1.0" encoding="UTF-8"?>
+<logger class="org.jpos.util.DailyLogListener">
+<log realm="org.jpos.ext.security.SoftSecurityModule" at="Thu Dec 04 17:02:33 CST 2014.90" lifespan="1433ms">
+  <jce-provider>
+    No JCE Provider specified. Attempting to load default provider (SunJCE).
+    <name>SunJCE</name>
+    
+    jPOS 1.9.8 master/baae23b (2014-08-10 15:13:59 UYT) 
+
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+jPOS Community Edition, licensed under GNU AGPL v3.0.
+This software is probably not suitable for commercial use.
+Please see http://jpos.org/license for details.
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.9 (Darwin)
+
+iQEcBAEBAgAGBQJMolHDAAoJEOQyeO71nYtFv74H/3OgehDGEy1VXp2U3/GcAobg
+HH2eZjPUz53r38ARPiU3pzm9LwDa3WZgJJaa/b9VrJwKvbPwe9+0kY3gScDE1skT
+ladHt+KHHmGQArEutkzHlpZa73RbroFEIa1qmN6MaDEHGoxZqDh0Sv2cpvOaVYGO
+St8ZaddLBPC17bSjAPWo9sWbvL7FgPFOHhnPmbeux8SLtnfWxXWsgo5hLBanKmO1
+1z+I/w/6DL6ZYZU6bAJUk+eyVVImJqw0x3IEElI07Nh9MC6BA4iJ77ejobj8HI2r
+q9ulRPEqH9NR79619lNKVUkE206dVlXo7xHmJS1QZy5v/GT66xBxyDVfTduPFXk=
+=oP+v
+-----END PGP SIGNATURE-----
+
+  </jce-provider>
+</log>
+<log realm="org.jpos.ext.security.SoftSecurityModule" at="Thu Dec 04 17:02:33 CST 2014.110">
+  <local-master-keys>
+    Loaded successfully from file: "/mnt/workspaces/work_eclipse/gitspace20141124/mobileposp/src/main/webapp/WEB-INF/config/lmk"
+  </local-master-keys>
+</log>
+<?xml version="1.0" encoding="UTF-8"?>
+<logger class="org.jpos.util.DailyLogListener">
+<log realm="org.jpos.ext.security.SoftSecurityModule" at="Thu Dec 04 17:13:02 CST 2014.747" lifespan="1651ms">
+  <jce-provider>
+    No JCE Provider specified. Attempting to load default provider (SunJCE).
+    <name>SunJCE</name>
+    
+    jPOS 1.9.8 master/baae23b (2014-08-10 15:13:59 UYT) 
+
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+jPOS Community Edition, licensed under GNU AGPL v3.0.
+This software is probably not suitable for commercial use.
+Please see http://jpos.org/license for details.
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.9 (Darwin)
+
+iQEcBAEBAgAGBQJMolHDAAoJEOQyeO71nYtFv74H/3OgehDGEy1VXp2U3/GcAobg
+HH2eZjPUz53r38ARPiU3pzm9LwDa3WZgJJaa/b9VrJwKvbPwe9+0kY3gScDE1skT
+ladHt+KHHmGQArEutkzHlpZa73RbroFEIa1qmN6MaDEHGoxZqDh0Sv2cpvOaVYGO
+St8ZaddLBPC17bSjAPWo9sWbvL7FgPFOHhnPmbeux8SLtnfWxXWsgo5hLBanKmO1
+1z+I/w/6DL6ZYZU6bAJUk+eyVVImJqw0x3IEElI07Nh9MC6BA4iJ77ejobj8HI2r
+q9ulRPEqH9NR79619lNKVUkE206dVlXo7xHmJS1QZy5v/GT66xBxyDVfTduPFXk=
+=oP+v
+-----END PGP SIGNATURE-----
+
+  </jce-provider>
+</log>
+<log realm="org.jpos.ext.security.SoftSecurityModule" at="Thu Dec 04 17:13:02 CST 2014.785" lifespan="1ms">
+  <local-master-keys>
+    Loaded successfully from file: "/mnt/workspaces/work_eclipse/gitspace20141124/mobileposp/src/main/webapp/WEB-INF/config/lmk"
+  </local-master-keys>
+</log>
+<?xml version="1.0" encoding="UTF-8"?>
+<logger class="org.jpos.util.DailyLogListener">
+<log realm="org.jpos.ext.security.SoftSecurityModule" at="Thu Dec 04 17:15:04 CST 2014.225" lifespan="1674ms">
+  <jce-provider>
+    No JCE Provider specified. Attempting to load default provider (SunJCE).
+    <name>SunJCE</name>
+    
+    jPOS 1.9.8 master/baae23b (2014-08-10 15:13:59 UYT) 
+
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+jPOS Community Edition, licensed under GNU AGPL v3.0.
+This software is probably not suitable for commercial use.
+Please see http://jpos.org/license for details.
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.9 (Darwin)
+
+iQEcBAEBAgAGBQJMolHDAAoJEOQyeO71nYtFv74H/3OgehDGEy1VXp2U3/GcAobg
+HH2eZjPUz53r38ARPiU3pzm9LwDa3WZgJJaa/b9VrJwKvbPwe9+0kY3gScDE1skT
+ladHt+KHHmGQArEutkzHlpZa73RbroFEIa1qmN6MaDEHGoxZqDh0Sv2cpvOaVYGO
+St8ZaddLBPC17bSjAPWo9sWbvL7FgPFOHhnPmbeux8SLtnfWxXWsgo5hLBanKmO1
+1z+I/w/6DL6ZYZU6bAJUk+eyVVImJqw0x3IEElI07Nh9MC6BA4iJ77ejobj8HI2r
+q9ulRPEqH9NR79619lNKVUkE206dVlXo7xHmJS1QZy5v/GT66xBxyDVfTduPFXk=
+=oP+v
+-----END PGP SIGNATURE-----
+
+  </jce-provider>
+</log>
+<log realm="org.jpos.ext.security.SoftSecurityModule" at="Thu Dec 04 17:15:04 CST 2014.252">
+  <local-master-keys>
+    Loaded successfully from file: "/mnt/workspaces/work_eclipse/gitspace20141124/mobileposp/src/main/webapp/WEB-INF/config/lmk"
+  </local-master-keys>
+</log>
+<?xml version="1.0" encoding="UTF-8"?>
+<logger class="org.jpos.util.DailyLogListener">
+<log realm="org.jpos.ext.security.SoftSecurityModule" at="Thu Dec 04 17:17:54 CST 2014.360" lifespan="1619ms">
+  <jce-provider>
+    No JCE Provider specified. Attempting to load default provider (SunJCE).
+    <name>SunJCE</name>
+    
+    jPOS 1.9.8 master/baae23b (2014-08-10 15:13:59 UYT) 
+
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+jPOS Community Edition, licensed under GNU AGPL v3.0.
+This software is probably not suitable for commercial use.
+Please see http://jpos.org/license for details.
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.9 (Darwin)
+
+iQEcBAEBAgAGBQJMolHDAAoJEOQyeO71nYtFv74H/3OgehDGEy1VXp2U3/GcAobg
+HH2eZjPUz53r38ARPiU3pzm9LwDa3WZgJJaa/b9VrJwKvbPwe9+0kY3gScDE1skT
+ladHt+KHHmGQArEutkzHlpZa73RbroFEIa1qmN6MaDEHGoxZqDh0Sv2cpvOaVYGO
+St8ZaddLBPC17bSjAPWo9sWbvL7FgPFOHhnPmbeux8SLtnfWxXWsgo5hLBanKmO1
+1z+I/w/6DL6ZYZU6bAJUk+eyVVImJqw0x3IEElI07Nh9MC6BA4iJ77ejobj8HI2r
+q9ulRPEqH9NR79619lNKVUkE206dVlXo7xHmJS1QZy5v/GT66xBxyDVfTduPFXk=
+=oP+v
+-----END PGP SIGNATURE-----
+
+  </jce-provider>
+</log>
+<log realm="org.jpos.ext.security.SoftSecurityModule" at="Thu Dec 04 17:17:54 CST 2014.381">
+  <local-master-keys>
+    Loaded successfully from file: "/mnt/workspaces/work_eclipse/gitspace20141124/mobileposp/src/main/webapp/WEB-INF/config/lmk"
+  </local-master-keys>
+</log>
+<?xml version="1.0" encoding="UTF-8"?>
+<logger class="org.jpos.util.DailyLogListener">
+<log realm="org.jpos.ext.security.SoftSecurityModule" at="Thu Dec 04 17:18:47 CST 2014.683" lifespan="1331ms">
+  <jce-provider>
+    No JCE Provider specified. Attempting to load default provider (SunJCE).
+    <name>SunJCE</name>
+    
+    jPOS 1.9.8 master/baae23b (2014-08-10 15:13:59 UYT) 
+
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+jPOS Community Edition, licensed under GNU AGPL v3.0.
+This software is probably not suitable for commercial use.
+Please see http://jpos.org/license for details.
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.9 (Darwin)
+
+iQEcBAEBAgAGBQJMolHDAAoJEOQyeO71nYtFv74H/3OgehDGEy1VXp2U3/GcAobg
+HH2eZjPUz53r38ARPiU3pzm9LwDa3WZgJJaa/b9VrJwKvbPwe9+0kY3gScDE1skT
+ladHt+KHHmGQArEutkzHlpZa73RbroFEIa1qmN6MaDEHGoxZqDh0Sv2cpvOaVYGO
+St8ZaddLBPC17bSjAPWo9sWbvL7FgPFOHhnPmbeux8SLtnfWxXWsgo5hLBanKmO1
+1z+I/w/6DL6ZYZU6bAJUk+eyVVImJqw0x3IEElI07Nh9MC6BA4iJ77ejobj8HI2r
+q9ulRPEqH9NR79619lNKVUkE206dVlXo7xHmJS1QZy5v/GT66xBxyDVfTduPFXk=
+=oP+v
+-----END PGP SIGNATURE-----
+
+  </jce-provider>
+</log>
+<log realm="org.jpos.ext.security.SoftSecurityModule" at="Thu Dec 04 17:18:47 CST 2014.708">
+  <local-master-keys>
+    Loaded successfully from file: "/mnt/workspaces/work_eclipse/gitspace20141124/mobileposp/src/main/webapp/WEB-INF/config/lmk"
+  </local-master-keys>
+</log>
+<?xml version="1.0" encoding="UTF-8"?>
+<logger class="org.jpos.util.DailyLogListener">
+<log realm="org.jpos.ext.security.SoftSecurityModule" at="Thu Dec 04 17:21:48 CST 2014.474" lifespan="1377ms">
+  <jce-provider>
+    No JCE Provider specified. Attempting to load default provider (SunJCE).
+    <name>SunJCE</name>
+    
+    jPOS 1.9.8 master/baae23b (2014-08-10 15:13:59 UYT) 
+
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+jPOS Community Edition, licensed under GNU AGPL v3.0.
+This software is probably not suitable for commercial use.
+Please see http://jpos.org/license for details.
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.9 (Darwin)
+
+iQEcBAEBAgAGBQJMolHDAAoJEOQyeO71nYtFv74H/3OgehDGEy1VXp2U3/GcAobg
+HH2eZjPUz53r38ARPiU3pzm9LwDa3WZgJJaa/b9VrJwKvbPwe9+0kY3gScDE1skT
+ladHt+KHHmGQArEutkzHlpZa73RbroFEIa1qmN6MaDEHGoxZqDh0Sv2cpvOaVYGO
+St8ZaddLBPC17bSjAPWo9sWbvL7FgPFOHhnPmbeux8SLtnfWxXWsgo5hLBanKmO1
+1z+I/w/6DL6ZYZU6bAJUk+eyVVImJqw0x3IEElI07Nh9MC6BA4iJ77ejobj8HI2r
+q9ulRPEqH9NR79619lNKVUkE206dVlXo7xHmJS1QZy5v/GT66xBxyDVfTduPFXk=
+=oP+v
+-----END PGP SIGNATURE-----
+
+  </jce-provider>
+</log>
+<log realm="org.jpos.ext.security.SoftSecurityModule" at="Thu Dec 04 17:21:48 CST 2014.499">
+  <local-master-keys>
+    Loaded successfully from file: "/mnt/workspaces/work_eclipse/gitspace20141124/mobileposp/src/main/webapp/WEB-INF/config/lmk"
+  </local-master-keys>
+</log>
+<?xml version="1.0" encoding="UTF-8"?>
+<logger class="org.jpos.util.DailyLogListener">
+<log realm="org.jpos.ext.security.SoftSecurityModule" at="Thu Dec 04 17:24:47 CST 2014.900" lifespan="1433ms">
+  <jce-provider>
+    No JCE Provider specified. Attempting to load default provider (SunJCE).
+    <name>SunJCE</name>
+    
+    jPOS 1.9.8 master/baae23b (2014-08-10 15:13:59 UYT) 
+
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+jPOS Community Edition, licensed under GNU AGPL v3.0.
+This software is probably not suitable for commercial use.
+Please see http://jpos.org/license for details.
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.9 (Darwin)
+
+iQEcBAEBAgAGBQJMolHDAAoJEOQyeO71nYtFv74H/3OgehDGEy1VXp2U3/GcAobg
+HH2eZjPUz53r38ARPiU3pzm9LwDa3WZgJJaa/b9VrJwKvbPwe9+0kY3gScDE1skT
+ladHt+KHHmGQArEutkzHlpZa73RbroFEIa1qmN6MaDEHGoxZqDh0Sv2cpvOaVYGO
+St8ZaddLBPC17bSjAPWo9sWbvL7FgPFOHhnPmbeux8SLtnfWxXWsgo5hLBanKmO1
+1z+I/w/6DL6ZYZU6bAJUk+eyVVImJqw0x3IEElI07Nh9MC6BA4iJ77ejobj8HI2r
+q9ulRPEqH9NR79619lNKVUkE206dVlXo7xHmJS1QZy5v/GT66xBxyDVfTduPFXk=
+=oP+v
+-----END PGP SIGNATURE-----
+
+  </jce-provider>
+</log>
+<log realm="org.jpos.ext.security.SoftSecurityModule" at="Thu Dec 04 17:24:47 CST 2014.917" lifespan="1ms">
+  <local-master-keys>
+    Loaded successfully from file: "/mnt/workspaces/work_eclipse/gitspace20141124/mobileposp/src/main/webapp/WEB-INF/config/lmk"
+  </local-master-keys>
+</log>
+<?xml version="1.0" encoding="UTF-8"?>
+<logger class="org.jpos.util.DailyLogListener">
+<log realm="org.jpos.ext.security.SoftSecurityModule" at="Thu Dec 04 17:53:12 CST 2014.800" lifespan="1361ms">
+  <jce-provider>
+    No JCE Provider specified. Attempting to load default provider (SunJCE).
+    <name>SunJCE</name>
+    
+    jPOS 1.9.8 master/baae23b (2014-08-10 15:13:59 UYT) 
+
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+jPOS Community Edition, licensed under GNU AGPL v3.0.
+This software is probably not suitable for commercial use.
+Please see http://jpos.org/license for details.
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.9 (Darwin)
+
+iQEcBAEBAgAGBQJMolHDAAoJEOQyeO71nYtFv74H/3OgehDGEy1VXp2U3/GcAobg
+HH2eZjPUz53r38ARPiU3pzm9LwDa3WZgJJaa/b9VrJwKvbPwe9+0kY3gScDE1skT
+ladHt+KHHmGQArEutkzHlpZa73RbroFEIa1qmN6MaDEHGoxZqDh0Sv2cpvOaVYGO
+St8ZaddLBPC17bSjAPWo9sWbvL7FgPFOHhnPmbeux8SLtnfWxXWsgo5hLBanKmO1
+1z+I/w/6DL6ZYZU6bAJUk+eyVVImJqw0x3IEElI07Nh9MC6BA4iJ77ejobj8HI2r
+q9ulRPEqH9NR79619lNKVUkE206dVlXo7xHmJS1QZy5v/GT66xBxyDVfTduPFXk=
+=oP+v
+-----END PGP SIGNATURE-----
+
+  </jce-provider>
+</log>
+<log realm="org.jpos.ext.security.SoftSecurityModule" at="Thu Dec 04 17:53:12 CST 2014.819">
+  <local-master-keys>
+    Loaded successfully from file: "/mnt/workspaces/work_eclipse/gitspace20141124/mobileposp/src/main/webapp/WEB-INF/config/lmk"
+  </local-master-keys>
+</log>

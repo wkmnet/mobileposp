@@ -12,13 +12,14 @@ import java.util.HashMap;
 import java.util.Map;
 
 import org.mobile.pos.mobileposp.action.AbstractAction;
-import org.mobile.pos.mobileposp.entity.TransactionEntity;
+import org.mobile.pos.mobileposp.entity.MobileTransactionEntity;
 import org.mobile.pos.mobileposp.service.trans.TransactionService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 /**
@@ -53,7 +54,8 @@ public class TransactionAction extends AbstractAction {
 	 */
 	@ResponseBody
 	@RequestMapping(value="/trans.action",method=RequestMethod.POST)
-	public Object transaction (TransactionEntity transactionParams){
+	public Object transaction (MobileTransactionEntity transactionParams,@RequestParam(value="abc",required=false,defaultValue="") String abc){
+		logger.info("abc=" + abc);
 		return transactionService.transaction(transactionParams);
 	}
 	

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+    <typeAliases>
+        <typeAlias alias="DeviceEntity" type="org.mobile.pos.mobileposp.dao.entity.DeviceEntity"/>
+        <typeAlias alias="TerminalEntity" type="org.mobile.pos.mobileposp.dao.entity.TerminalEntity"/>
+        <typeAlias alias="MerchantEntity" type="org.mobile.pos.mobileposp.dao.entity.MerchantEntity"/>
+    </typeAliases>
+    <mappers>
+        <mapper resource="org/mobile/pos/mobileposp/dao/deviceMapper.xml"/>
+        <mapper resource="org/mobile/pos/mobileposp/dao/terminalMapper.xml"/>
+        <mapper resource="org/mobile/pos/mobileposp/dao/merchantMapper.xml"/>
+    </mappers>
+</configuration>

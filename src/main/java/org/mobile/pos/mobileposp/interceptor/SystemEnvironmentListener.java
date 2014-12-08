@@ -41,7 +41,10 @@ public class SystemEnvironmentListener implements ServletContextListener {
 		} else {
 			System.setProperty("LOG4j_PATH", sce.getServletContext().getRealPath("/"));
 		}
+		System.setProperty("WEB_ROOT", sce.getServletContext().getRealPath("/"));
 		logger.info("LOG4j_PATH:" + System.getProperty("LOG4j_PATH"));
+		logger.info("WEB_ROOT:" + System.getProperty("WEB_ROOT"));
+		
 	}
 
 }

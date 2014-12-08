@@ -8,11 +8,12 @@
 
 package org.mobile.pos.mobileposp.service.trans;
 
-import org.mobile.pos.mobileposp.entity.TransactionEntity;
+import org.mobile.pos.mobileposp.entity.MobileTransactionEntity;
 import org.mobile.pos.mobileposp.exception.PospException;
-import org.mobile.pos.mobileposp.iso.SaleChannel;
+import org.mobile.pos.mobileposp.iso.ISOHandler;
 import org.mobile.pos.mobileposp.service.AbstractService;
 import org.mobile.pos.mobileposp.util.ResponseMessageUtil;
+import org.mobile.pos.mobileposp.util.SpringContextUtil;
 import org.mobile.pos.mobileposp.util.UnionpayResponseCode;
 import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Service;
@@ -31,7 +32,7 @@ import org.springframework.stereotype.Service;
 @Scope("prototype")
 public class TransactionService extends AbstractService {
 	
-	public static String SALE_CODE = "0200";
+	public static String SALE_CODE = "_sale";
 
 	/**
 	 * 
@@ -46,13 +47,12 @@ public class TransactionService extends AbstractService {
 	 * @return
 	 * @since JDK 1.6
 	 */
-	public Object transaction(TransactionEntity transactionParams){
+	public Object transaction(MobileTransactionEntity transactionParams){
 		if( null == transactionParams){
 			return ResponseMessageUtil.failMessage(UnionpayResponseCode.ILLEGAL_ARGUMENT.getResponseCode());
 		}
 		try {
-			SaleChannel sale = new SaleChannel();
-			return sale.sale(transactionParams);
+			return SpringContextUtil.getBean(SALE_CODE,ISOHandler.class).processe(transactionParams);
 		} catch (PospException e){
 			logger.error("PospException:" + e.getMessage(),e);
 			return ResponseMessageUtil.failMessage(e.getExceptionCode(), e.getMessage());

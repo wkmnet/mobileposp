@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC   
+    "-//mybatis.org//DTD Mapper 3.0//EN"  
+    "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="org.mobile.pos.mobileposp.dao.DeviceMapper">
+    <select id="findDeviceByKsnNo" parameterType="String" resultType="DeviceEntity">
+        select mk.ksn_no ksnNo,mk.is_used isUsed,mk.is_activated isActivated,mk.terminal_id terminalId,
+        mk.mac_address macAddress,mk.bluetooth_name bluetoothName from mcr_ksn mk where mk.ksn_no=#{ksnNo}
+    </select>
+</mapper>

@@ -34,8 +34,9 @@ import org.slf4j.LoggerFactory;
  * @since    JDK 1.6
  * @see 	 
  */
-public abstract class AbstractChannel {
+public abstract class AbstractChannel  implements ISOHandler{
 	
+	//标准日志输出
 	protected Logger logger =  LoggerFactory.getLogger(this.getClass());
 	
 	//ISO包
@@ -100,8 +101,8 @@ public abstract class AbstractChannel {
 			builder.append("send:");
 			builder.append(System.getProperty("line.separator"));
 			builder.append(ISOUtil.hexdump(message.pack()));
+			builder.append(System.getProperty("line.separator"));
 			logger.info(builder.toString());
-			
 		} catch (ISOException e){
 			logger.error("待发送的ISO8583报文,打包出现问题：" + e.getMessage(),e);
 			throw new PospException(UnionpayResponseCode.ISO_MESSAGE_EXCEPTION.getResponseCode(),"ISO打包出现问题：" + e.getMessage());

@@ -37,6 +37,12 @@ public enum UnionpayResponseCode {
 	//网络连接异常
 	NET_CONNECT_EXCEPTION("RES005","网络连接异常!"),
 	
+	//无效参数
+	ILLEGAL_REQUSET("RES006","未知请求!"),
+	
+	//无效设备
+	ILLEGAL_DEVICE("RES007","无效的设备!"),
+	
 	
 	
 	
